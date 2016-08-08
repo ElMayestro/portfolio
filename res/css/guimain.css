@@ -1,0 +1,403 @@
+body {
+  background-color: black;
+  color: white;
+}
+.wrapper {
+  position: absolute;
+  max-height: 600px;
+  height: 60vh;
+  width: 100vw;
+  margin-top: 20vh;
+}
+.wrapper .G {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 600px;
+  min-width: 300px;
+  height: 100%;
+  background-color: rgba(60,60,60,0.2);
+}
+.wrapper .G div {
+  cursor: default;
+  position: absolute;
+}
+.topic {
+  color: #0000ff;
+  text-decoration: none;
+  font-size: 60px;
+  font-family: "News Cycle";
+}
+.rightDownRot {
+  height: auto;
+  width: auto;
+  -ms-transform: rotate(45deg); /* IE 9 */
+  -webkit-transform: rotate(45deg); /* Safari */
+  transform: rotate(45deg);
+}
+.rightUpRot {
+  height: auto;
+  width: auto;
+  -ms-transform: rotate(-45deg); /* IE 9 */
+  -webkit-transform: rotate(-45deg); /* Safari */
+  transform: rotate(-45deg);
+}
+.leftDownRot {
+  direction: rtl;
+  height: auto;
+  width: auto;
+  -ms-transform: rotate(45deg); /* IE 9 */
+  -webkit-transform: rotate(45deg); /* Safari */
+  transform: rotate(45deg);
+}
+.leftUpRot {
+  direction: rtl;
+  height: auto;
+  width: auto;
+  -ms-transform: rotate(-45deg); /* IE 9 */
+  -webkit-transform: rotate(-45deg); /* Safari */
+  transform: rotate(-45deg);
+}
+.downRot {
+  height: auto;
+  width: auto;
+  -ms-transform: rotate(-270deg); /* IE 9 */
+  -webkit-transform: rotate(-270deg); /* Safari */
+  transform: rotate(-270deg);
+}
+#G {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 600px;
+  height: 600px;
+  background-color: rgba(60,60,60,0.2);
+}
+/*TOPICS*/
+#CV {
+  left: 274px;
+  top: 0;
+}
+#PROJECTS {
+  left: -24;
+  top: 185;
+}
+#SKILLS {
+  left: 178;
+  bottom: 35;
+}
+#CONTACT {
+  right: -9;
+  bottom: 192;
+}
+#TIMO {
+  right: 184;
+  top: 235;
+}
+/*WRITINGS*/
+#FOCUS {
+  bottom: 200;
+  left: 133;
+  font-size: 44px;
+  letter-spacing: 2px;
+}
+#COFFEE {
+  bottom: 69;
+  left: 237;
+  font-size: 24;
+  letter-spacing: 7;
+}
+#MOUETTE {
+  bottom: 97;
+  left: 257;
+  font-size: 25;
+  letter-spacing: -1;
+}
+#TECH {
+  bottom: 124;
+  left: 243;
+  font-size: 24;
+  letter-spacing: -2;
+}
+#CONC {
+  bottom: 69;
+  left: 303;
+  font-size: 19;
+  letter-spacing: 0;
+}
+#GRIZZI {
+  bottom: 87;
+  left: 316;
+  font-size: 23;
+  letter-spacing: 0;
+}
+#ZEST {
+  bottom: 123px;
+  left: 338px;
+  font-size: 16px;
+  letter-spacing: 10px;
+  font-weight: 900;
+}
+#PHP {
+  bottom: 248px;
+  left: 277px;
+  font-size: 18px;
+  letter-spacing: 4px;
+  font-weight: 900;
+}
+#MUSIC {
+  bottom: 218px;
+  left: 292px;
+  font-size: 18px;
+  letter-spacing: 4px;
+  font-weight: 900;
+}
+#DESIGN {
+  bottom: 237px;
+  left: 311px;
+  font-size: 29px;
+  letter-spacing: 4px;
+}
+#CSS {
+  bottom: 265px;
+  left: 312px;
+  font-size: 17px;
+  letter-spacing: 10px;
+}
+#JS {
+  bottom: 260px;
+  left: 368px;
+  font-size: 23px;
+  letter-spacing: 0px;
+}
+#COLORFUL {
+  bottom: 283px;
+  left: 379px;
+  font-size: 23px;
+  letter-spacing: -1px;
+}
+#HI {
+  bottom: 311px;
+  left: 410px;
+  font-size: 19px;
+  letter-spacing: -1px;
+}
+#STYLE {
+  bottom: 306px;
+  left: 477px;
+  font-size: 26px;
+  letter-spacing: 1px;
+}
+#NETWORK {
+  bottom: 269px;
+  left: 403px;
+  font-size: 21px;
+  letter-spacing: 0px;
+}
+#FCB {
+  bottom: 219px;
+  left: 424px;
+  font-size: 25px;
+  letter-spacing: -1px;
+}
+#BARCA {
+  bottom: 156px;
+  left: 298px;
+  font-size: 48px;
+  letter-spacing: -1px;
+}
+#SCORE {
+  bottom: 246px;
+  left: 446px;
+  font-size: 33px;
+  letter-spacing: -4px;
+}
+#RESULT {
+  bottom: 266px;
+  left: 433px;
+  font-size: 19px;
+  letter-spacing: 3px;
+}
+#LOVE {
+  bottom: 210px;
+  left: 404px;
+  font-size: 24px;
+  letter-spacing: -3px;
+}
+#PYTHON {
+  bottom: 149px;
+  left: 314px;
+  font-size: 34px;
+  letter-spacing: 1px;
+}
+#FRESH {
+  bottom: 117px;
+  left: 168px;
+  font-size: 17px;
+  letter-spacing: 0px;
+}
+#GAFNER {
+  bottom: 173px;
+  left: 125px;
+  font-size: 40px;
+  letter-spacing: 1px;
+}
+#HAY {
+  bottom: 117px;
+  left: 217px;
+  font-size: 38px;
+  letter-spacing: 1px;
+}
+#ELWAY {
+  bottom: 148px;
+  left: 86px;
+  font-size: 22px;
+  letter-spacing: 12px;
+}
+#JAZZ {
+  bottom: 152px;
+  left: 132px;
+  font-size: 13px;
+  letter-spacing: 11px;
+  font-weight: 600;
+}
+#DRUMS {
+  bottom: 166px;
+  left: 196px;
+  font-size: 14px;
+  letter-spacing: 0px;
+  font-weight: 600;
+}
+#SURF {
+  bottom: 224px;
+  left: 105px;
+  font-size: 20px;
+  letter-spacing: 0px;
+  font-weight: 600;
+}
+#BRAND {
+  bottom: 202px;
+  left: 87px;
+  font-size: 10px;
+  letter-spacing: 0px;
+  font-weight: 600;
+}
+#ELLINGTON {
+  bottom: 242px;
+  left: 54px;
+  font-size: 30px;
+  letter-spacing: 0px;
+  font-weight: 600;
+}
+#LEBRON {
+  bottom: 302px;
+  left: 152px;
+  font-size: 10px;
+  letter-spacing: 0px;
+  font-weight: 600;
+}
+#LOGICAL {
+  bottom: 238px;
+  left: 31px;
+  font-size: 10px;
+  letter-spacing: 0px;
+  font-weight: 600;
+}
+#EXPLORE {
+  bottom: 300px;
+  left: 27px;
+  font-size: 24px;
+  letter-spacing: 8px;
+}
+#PERCUSSION {
+  bottom: 304px;
+  left: 36px;
+  font-size: 24px;
+  letter-spacing: 8px;
+}
+/*Fonts*/
+.maven {
+  font-family: 'Maven Pro';
+}
+.pacifico {
+  font-family: 'Pacifico';
+}
+.lobster {
+  font-family: 'Lobster';
+}
+.indieflower {
+  font-family: 'Indie Flower';
+}
+.newscycle {
+  font-family: 'News Cycle';
+}
+.scp {
+  font-family: 'Source Code Pro';
+}
+.tangerine {
+  font-family: 'Tangerine';
+}
+.oswald {
+  font-family: 'Oswald';
+}
+
+/*flyin
+.flyin {
+  -webkit-animation: flyin 600ms ease-in;
+  -moz-animation: flyin 600ms ease-in;
+  -o-animation: flyin 600ms ease-in;
+  -ms-animation: flyin 600ms ease-in;
+  animation: flyin 600ms ease-in;
+}
+@-webkit-keyframes flyin {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(2);
+  } to {
+    -webkit-transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes flyin {
+  from {
+    opacity: 0;
+    -moz-transform: scale(2);
+  } to {
+    -moz-transform: scale(1);
+    opacity: 1;
+  }
+}
+@-o-keyframes flyin {
+  from {
+    opacity: 0;
+    -o-transform: scale(2);
+  } to {
+    -o-transform: scale(1);
+    opacity: 1;
+  }
+}
+@-ms-keyframes flyin {
+  from {
+    opacity: 0;
+    -ms-transform: scale(2);
+  } to {
+    -ms-transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes flyin {
+  from {
+    opacity: 0;
+    transform: scale(3);
+  } to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

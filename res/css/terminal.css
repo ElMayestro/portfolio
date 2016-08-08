@@ -1,0 +1,119 @@
+/*terminal*/
+.terminal {
+  z-index: 102;
+  display: none;
+	float: left;
+	height: 100vh;
+	width: 35vw;
+	background-color: rgba(16,16,16,0.5);
+}
+.terminal .titlebar {
+  z-index: 102;
+	float: left;
+  position: absolute;
+  width: 35vw;
+	height: 70px;
+	background-color: #2E3237;
+}
+.terminal .titlebar p {
+	text-align: center;
+	margin-top: 26.5px;
+	font-size: 17px;
+  font-weight: bold;
+}
+.terminal .input {
+	width: 100%;
+	height: 91%;
+  cursor: text;
+  margin-top: 80px;
+  padding-left: 10px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.terminal .input .history .statement {
+  padding-left: 4px;
+  padding-top: 4px;
+  font-size: 17px;
+}
+.terminal .input .activeLine .terminalPath {
+	float: left;
+  padding: 4px;
+  font-size: 17px;
+}
+.terminal .input .activeLine .termInput {
+	float: left;
+  margin-left: 6px;
+	background: none;
+	border: none;
+	color: white;
+	font-size: 17px;
+	font-family: "Source Code Pro";
+}
+.terminal .input .activeLine .termInput:focus {
+  border: none;
+  outline: none;
+}
+::selection {
+  background: white;
+  color: black;
+}
+::moz-selection {
+  background: white;
+  color: black;
+}
+.link {
+  cursor: pointer;
+  color: #729FCF;
+}
+.closeTerminal {
+  position: absolute;
+  right: 10px;
+  top: 26px;
+  background-color: black;
+  height: auto;
+  width: auto;
+  border-radius: 90px;
+  padding: 3px;
+}
+.closeTerminal .closeBtn{
+  height: 15px;
+  width: auto;
+}
+.closeTerminal:hover {
+  background-color: #494848;
+}
+.closeTerminal:active {
+  background-color: #212121;
+}
+.openTerminal {
+  z-index: 100;
+  position: absolute;
+  top: 3vh;
+  left: 0;
+  margin-left: -30px;
+  height: 30px;
+  width: 30px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: #2E3237;
+}
+.openDiv {
+  position: absolute;
+  top: 5;
+  left: 3;
+  background-color: black;
+  height: auto;
+  width: auto;
+  border-radius: 90px;
+  padding: 3px;
+}
+.openDiv .openBtn{
+  height: 15px;
+  width: auto;
+}
+.openDiv:hover {
+  background-color: #494848;
+}
+.openDiv:active {
+  background-color: #212121;
+}
