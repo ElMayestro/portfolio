@@ -1,11 +1,13 @@
 body {
-  background-color: black;
+  overflow: hidden;
+  /*background-color: #050505;*/
   color: white;
+  background: #121212 url(/res/img/background.gif) 0 0;
 }
 .wrapper {
   position: absolute;
   max-height: 600px;
-  height: 60vh;
+  height: 600px;
   width: 100vw;
   margin-top: 20vh;
 }
@@ -16,20 +18,26 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  max-width: 600px;
+  width: 600px;
   min-width: 300px;
-  height: 100%;
-  background-color: rgba(60,60,60,0.2);
+  height: 600px;
 }
 .wrapper .G div {
   cursor: default;
   position: absolute;
 }
 .topic {
-  color: #0000ff;
+  color: #153951;
   text-decoration: none;
   font-size: 60px;
   font-family: "News Cycle";
+}
+.topic:hover {
+  /*color: #60829E;*/
+  color: #60859E;
+}
+.topic.dormant {
+  color: #09161F;
 }
 .rightDownRot {
   height: auto;
@@ -68,258 +76,397 @@ body {
   -webkit-transform: rotate(-270deg); /* Safari */
   transform: rotate(-270deg);
 }
-#G {
-  position: absolute;
-  margin: auto;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 600px;
-  height: 600px;
-  background-color: rgba(60,60,60,0.2);
+.flyin {
+  display: none;
+}
+/*text blur*/
+.blur {/*
+  color: transparent;
+  text-shadow: 0 0 10px rgba(255,255,255,1);
+  opacity: 0;*/
+}
+/*glow effect*/
+.glow {
+  -webkit-transition: text-shadow 0.5s linear;
+  -moz-transition: text-shadow 0.5s linear;
+  -ms-transition: text-shadow 0.5s linear;
+  -o-transition: text-shadow 0.5s linear;
+  transition: text-shadow 0.5s linear;
+}
+.glow.glow{
+    text-shadow: 0 0 15px white;
+}
+.noglow {
+  -webkit-transition: text-shadow 0.5s linear;
+  -moz-transition: text-shadow 0.5s linear;
+  -ms-transition: text-shadow 0.5s linear;
+  -o-transition: text-shadow 0.5s linear;
+  transition: text-shadow 0.5s linear;
+}
+.noglow.glow{
+    text-shadow: none;
 }
 /*TOPICS*/
 #CV {
-  left: 274px;
-  top: 0;
+  left: 275;
+  top: 8;
 }
 #PROJECTS {
-  left: -24;
-  top: 185;
+  left: -26.5;
+  top: 196.5
 }
 #SKILLS {
   left: 178;
-  bottom: 35;
+  bottom: 45;
 }
 #CONTACT {
-  right: -9;
-  bottom: 192;
+  right: -12;
+  bottom: 205;
 }
 #TIMO {
   right: 184;
-  top: 235;
+  top: 245;
 }
 /*WRITINGS*/
 #FOCUS {
-  bottom: 200;
+  bottom: 215;
   left: 133;
   font-size: 44px;
   letter-spacing: 2px;
 }
 #COFFEE {
-  bottom: 69;
+  bottom: 84;
   left: 237;
   font-size: 24;
   letter-spacing: 7;
 }
 #MOUETTE {
-  bottom: 97;
+  bottom: 112;
   left: 257;
   font-size: 25;
   letter-spacing: -1;
 }
 #TECH {
-  bottom: 124;
+  bottom: 139;
   left: 243;
   font-size: 24;
   letter-spacing: -2;
 }
 #CONC {
-  bottom: 69;
+  bottom: 84;
   left: 303;
   font-size: 19;
   letter-spacing: 0;
 }
 #GRIZZI {
-  bottom: 87;
+  bottom: 102;
   left: 316;
   font-size: 23;
   letter-spacing: 0;
 }
 #ZEST {
-  bottom: 123px;
+  bottom: 138;
   left: 338px;
   font-size: 16px;
   letter-spacing: 10px;
   font-weight: 900;
 }
 #PHP {
-  bottom: 248px;
+  bottom: 263;
   left: 277px;
   font-size: 18px;
   letter-spacing: 4px;
   font-weight: 900;
 }
 #MUSIC {
-  bottom: 218px;
+  bottom: 233;
   left: 292px;
   font-size: 18px;
   letter-spacing: 4px;
   font-weight: 900;
 }
 #DESIGN {
-  bottom: 237px;
+  bottom: 252;
   left: 311px;
   font-size: 29px;
   letter-spacing: 4px;
 }
 #CSS {
-  bottom: 265px;
+  bottom: 280;
   left: 312px;
   font-size: 17px;
   letter-spacing: 10px;
 }
 #JS {
-  bottom: 260px;
+  bottom: 275;
   left: 368px;
   font-size: 23px;
   letter-spacing: 0px;
 }
 #COLORFUL {
-  bottom: 283px;
+  bottom: 297;
   left: 379px;
   font-size: 23px;
   letter-spacing: -1px;
 }
 #HI {
-  bottom: 311px;
+  bottom: 326;
   left: 410px;
   font-size: 19px;
   letter-spacing: -1px;
 }
 #STYLE {
-  bottom: 306px;
+  bottom: 321;
   left: 477px;
   font-size: 26px;
   letter-spacing: 1px;
 }
 #NETWORK {
-  bottom: 269px;
+  bottom: 282;
   left: 403px;
   font-size: 21px;
   letter-spacing: 0px;
 }
 #FCB {
-  bottom: 219px;
+  bottom: 234;
   left: 424px;
   font-size: 25px;
   letter-spacing: -1px;
 }
 #BARCA {
-  bottom: 156px;
+  bottom: 171;
   left: 298px;
   font-size: 48px;
   letter-spacing: -1px;
 }
 #SCORE {
-  bottom: 246px;
+  bottom: 261;
   left: 446px;
   font-size: 33px;
   letter-spacing: -4px;
 }
 #RESULT {
-  bottom: 266px;
+  bottom: 281;
   left: 433px;
   font-size: 19px;
   letter-spacing: 3px;
 }
 #LOVE {
-  bottom: 210px;
+  bottom: 225;
   left: 404px;
   font-size: 24px;
   letter-spacing: -3px;
 }
 #PYTHON {
-  bottom: 149px;
+  bottom: 164;
   left: 314px;
   font-size: 34px;
   letter-spacing: 1px;
 }
 #FRESH {
-  bottom: 117px;
+  bottom: 132;
   left: 168px;
   font-size: 17px;
   letter-spacing: 0px;
 }
 #GAFNER {
-  bottom: 173px;
+  bottom: 188;
   left: 125px;
   font-size: 40px;
   letter-spacing: 1px;
 }
 #HAY {
-  bottom: 117px;
+  bottom: 132;
   left: 217px;
   font-size: 38px;
   letter-spacing: 1px;
 }
 #ELWAY {
-  bottom: 148px;
+  bottom: 163;
   left: 86px;
   font-size: 22px;
   letter-spacing: 12px;
 }
 #JAZZ {
-  bottom: 152px;
+  bottom: 167;
   left: 132px;
   font-size: 13px;
   letter-spacing: 11px;
   font-weight: 600;
 }
 #DRUMS {
-  bottom: 166px;
+  bottom: 181;
   left: 196px;
   font-size: 14px;
   letter-spacing: 0px;
   font-weight: 600;
 }
 #SURF {
-  bottom: 224px;
+  bottom: 239;
   left: 105px;
   font-size: 20px;
   letter-spacing: 0px;
   font-weight: 600;
 }
 #BRAND {
-  bottom: 202px;
+  bottom: 217;
   left: 87px;
   font-size: 10px;
   letter-spacing: 0px;
   font-weight: 600;
 }
 #ELLINGTON {
-  bottom: 242px;
+  bottom: 257;
   left: 54px;
   font-size: 30px;
   letter-spacing: 0px;
   font-weight: 600;
 }
 #LEBRON {
-  bottom: 302px;
+  bottom: 317;
   left: 152px;
   font-size: 10px;
   letter-spacing: 0px;
   font-weight: 600;
 }
 #LOGICAL {
-  bottom: 238px;
+  bottom: 253;
   left: 31px;
   font-size: 10px;
   letter-spacing: 0px;
   font-weight: 600;
 }
 #EXPLORE {
-  bottom: 300px;
+  bottom: 315;
   left: 27px;
   font-size: 24px;
   letter-spacing: 8px;
 }
 #PERCUSSION {
-  bottom: 304px;
+  bottom: 319;
   left: 36px;
   font-size: 24px;
   letter-spacing: 8px;
+}
+#COMPUTER {
+  bottom: 351px;
+  left: 155px;
+  font-size: 18px;
+  letter-spacing: 0px;
+}
+#EXPERIENCE {
+  bottom: 348px;
+  left: 165px;
+  font-size: 18px;
+  letter-spacing: 0px;
+}
+#PASSION {
+  bottom: 394px;
+  left: 151px;
+  font-size: 21px;
+  letter-spacing: 0px;
+}
+#BLAUGRANA {
+  bottom: 437px;
+  left: 174px;
+  font-size: 21px;
+  letter-spacing: 0px;
+}
+#NICE {
+  bottom: 395px;
+  left: 206px;
+  font-size: 21px;
+  letter-spacing: -2px;
+  font-weight: 700;
+}
+#DEDICATION {
+  bottom: 510px;
+  left: 185px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+#CURIOSITY {
+  bottom: 487px;
+  left: 200px;
+  font-size: 20px;
+  letter-spacing: 0px;
+}
+#P100 {
+  bottom: 414px;
+  left: 240px;
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+#FRENCH {
+  bottom: 505px;
+  left: 263px;
+  font-size: 30px;
+  letter-spacing: -1px;
+  font-weight: 500;
+}
+#LONDON {
+  bottom: 516px;
+  left: 305px;
+  font-size: 17px;
+  letter-spacing: 0px;
+  font-weight: 500;
+}
+#PROGRESS {
+  bottom: 472px;
+  left: 290px;
+  font-size: 17px;
+  letter-spacing: 3px;
+  font-weight: 500;
+}
+#ENDURANCE {
+  bottom: 486px;
+  left: 258px;
+  font-size: 15px;
+  letter-spacing: -1px;
+  font-weight: 600;
+}
+#FRIENDS {
+  bottom: 486px;
+  left: 314px;
+  font-size: 25px;
+  letter-spacing: 0px;
+  font-weight: 600;
+}
+#TG {
+  bottom: 514px;
+  left: 350px;
+  font-size: 15px;
+  letter-spacing: 4px;
+  font-weight: 600;
+}
+#LIGHT {
+  bottom: 456px;
+  left: 227px;
+  font-size: 29px;
+  letter-spacing: 0px;
+  font-weight: 600;
+}
+#OCEAN {
+  bottom: 436px;
+  left: 208px;
+  font-size: 15px;
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+#EMINEM {
+  bottom: 474px;
+  left: 249px;
+  font-size: 17px;
+  letter-spacing: 0px;
+  font-weight: 400;
+}
+#ATOM {
+  bottom: 441px;
+  left: 250px;
+  font-size: 20px;
+  letter-spacing: -3px;
+  font-weight: 300;
 }
 /*Fonts*/
 .maven {
@@ -346,58 +493,31 @@ body {
 .oswald {
   font-family: 'Oswald';
 }
-
-/*flyin
-.flyin {
-  -webkit-animation: flyin 600ms ease-in;
-  -moz-animation: flyin 600ms ease-in;
-  -o-animation: flyin 600ms ease-in;
-  -ms-animation: flyin 600ms ease-in;
-  animation: flyin 600ms ease-in;
-}
-@-webkit-keyframes flyin {
-  from {
-    opacity: 0;
-    -webkit-transform: scale(2);
-  } to {
-    -webkit-transform: scale(1);
-    opacity: 1;
-  }
+.helvetica {
+  font-family: 'Helvetica Neue';
 }
 
-@-moz-keyframes flyin {
-  from {
-    opacity: 0;
-    -moz-transform: scale(2);
-  } to {
-    -moz-transform: scale(1);
-    opacity: 1;
-  }
+
+/*content*/
+.container {
+  top: -100vh;
+  width: 100vw;
+  height: 100vh;
+  background: #121212 url(/res/img/background.gif) 0 0;
+  position: absolute;
 }
-@-o-keyframes flyin {
-  from {
-    opacity: 0;
-    -o-transform: scale(2);
-  } to {
-    -o-transform: scale(1);
-    opacity: 1;
-  }
+.container div {
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 3%;
+  left: 3%;
+  margin: auto;
+  background-color: rgba(25,25,25,0.6);
 }
-@-ms-keyframes flyin {
-  from {
-    opacity: 0;
-    -ms-transform: scale(2);
-  } to {
-    -ms-transform: scale(1);
-    opacity: 1;
-  }
-}
-@keyframes flyin {
-  from {
-    opacity: 0;
-    transform: scale(3);
-  } to {
-    transform: scale(1);
-    opacity: 1;
-  }
+.container div p {
+  font-size: 200px;
+  font-family: 'Arimo';
+  text-align: center;
 }
