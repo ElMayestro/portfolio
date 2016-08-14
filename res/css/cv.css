@@ -1,0 +1,192 @@
+.bottom-bar {
+  z-index: 1000;
+  bottom: 13%;
+  position: absolute;
+  height: 13%;
+  width: 100vw;
+  z-index: 980;
+  background-image: url(/res/img/background.gif);
+}
+.bottom-bar .bb-circle {
+  width: 390px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.bottom-bar .bb-circle div {
+  cursor: pointer;
+  color: #1F2523;
+  text-align: center;
+  float: left;
+  margin: 15px;
+  height: 100px;
+  width: 100px;
+  background-color: white;
+  border-radius: 50%;
+  -webkit-transition: all .4s ease-out;
+  transition: all .4s ease-out;
+}
+.bottom-bar .bb-circle div p {
+  margin-top: 27px;
+  font-family: 'OpenSans';
+  font-size: 20px;
+  line-height: 15px;
+}
+.bottom-bar .bb-circle div:hover {
+  background-color: #1F2523;
+  color: white;
+}
+.bottom-bar .bb-circle .queri {
+  line-height: 20px;
+  font-size: 30px;
+}
+.bottom-bar .bb-circle div.activePage {
+  background-color: #1F2523;
+  color: white;
+  cursor: default;
+}
+/*content*/
+.cv-content {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 74vh;
+  background-color: #eaeaea;
+}
+.cv-content .intro {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 25vw;
+  right: 25vw;
+}
+.cv-content .intro .intro-content-wrapper {
+  position: absolute;
+  top: 15px;
+  bottom: 15px;
+  right: 15px;
+  left: 15px;
+  background-image: url(/res/img/cv-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: all .4s ease-out;
+}
+.cv-content .intro .intro-content-wrapper .intro-content{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  -webkit-filter: blur(0px);
+}
+.cv-content .intro .intro-content .circle-cv {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: white;
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+  -webkit-filter: blur(0) !important;
+  filter: blur(0) !important;
+}
+.cv-content .intro .intro-content .circle-cv p {
+  text-align: center;
+  line-height: 300px;
+  font-size: 200px;
+  font-family: 'OpenSans';
+  font-weight: lighter;
+  letter-spacing: 4px;
+  color: #1F2523;
+}
+.cv-content .intro .intro-content-wrapper.cont-wrapper {
+  -webkit-filter: blur(3px);
+  filter: blur(3px);
+}
+.cv-content .intro .intro-content .cont-wrapper-acitve {
+  display: none;
+  background-color: rgba(31,37,35,0.8);
+  position: absolute;
+  top: 15px;
+  bottom: 15px;
+  right: 15px;
+  left: 15px;
+}
+/*content circle*/
+.cv-content .intro .intro-content .circle-cont {
+  display: none;
+  opacity: 0;
+  position: absolute;
+  left: -300px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: white;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  color: #1F2523;
+}
+.cv-content .intro .intro-content .circle-cont p {
+  text-align: center;
+  line-height: 85px;
+  font-size: 65px;
+  font-family: 'OpenSans';
+  font-weight: lighter;
+  letter-spacing: 3px;
+  margin-top: 50px;
+}
+.cv-content .intro .intro-content .circle-cont i {
+  line-height: 10px;
+}
+/*image left*/
+.cv-content .image-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 50vw;
+}
+.cv-content .image-container .image-wrapper {
+  position: absolute;
+  top: 15;
+  bottom: 15;
+  left: 15;
+  right: 7.5;
+}
+
+.cv-content .image-container .image-wrapper div {
+  display: none;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-filter: contrast(90%) saturate(0);
+  filter: contrast(90%) saturate(0);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.cv-content .image-container .image-wrapper div a {
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+.cv-content .image-container .image-wrapper .prim {
+  background-image: url(/res/img/prim.jpg);
+}
+.cv-content .image-container .image-wrapper .oszt {
+  background-image: url(/res/img/oszt.jpg);
+}
+.cv-content .image-container .image-wrapper .bwd {
+  background-image: url(/res/img/bwd.jpg);
+}

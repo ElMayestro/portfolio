@@ -1,0 +1,197 @@
+body {
+  overflow: hidden;
+  /*background-color: #050505;*/
+  color: white;
+  background: #121212 url(/res/img/background.gif) 0 0;
+}
+.wrapper {
+  position: absolute;
+  max-height: 600px;
+  height: 600px;
+  width: 100vw;
+  margin-top: 20vh;
+}
+.wrapper .G {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 600px;
+  min-width: 300px;
+  height: 600px;
+}
+.wrapper .G div {
+  cursor: default;
+  position: absolute;
+}
+.topic {
+  color: #153951;
+  text-decoration: none;
+  font-size: 60px;
+  font-family: "News Cycle";
+  -webkit-transition: color 1s;
+  -moz-transition: color 1s;
+  -o-transition: color 1s;
+  transition: color 1s;
+}
+.topic:hover {
+  color: #60859E;
+}
+.topic.dormant {
+  color: #0F2330;
+  /*opacity: 0.5*/
+}
+.writting.dormant {
+  color: #6E6E6E;
+  /*opacity: 0.5;*/
+}
+.writting {
+  -webkit-transition: color 0.3s;
+  -moz-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  transition: color 0.3s;
+}
+.rightDownRot {
+  height: auto;
+  width: auto;
+  -ms-transform: rotate(45deg); /* IE 9 */
+  -webkit-transform: rotate(45deg); /* Safari */
+  transform: rotate(45deg);
+}
+.rightUpRot {
+  height: auto;
+  width: auto;
+  -ms-transform: rotate(-45deg); /* IE 9 */
+  -webkit-transform: rotate(-45deg); /* Safari */
+  transform: rotate(-45deg);
+}
+.leftDownRot {
+  direction: rtl;
+  height: auto;
+  width: auto;
+  -ms-transform: rotate(45deg); /* IE 9 */
+  -webkit-transform: rotate(45deg); /* Safari */
+  transform: rotate(45deg);
+}
+.leftUpRot {
+  direction: rtl;
+  height: auto;
+  width: auto;
+  -ms-transform: rotate(-45deg); /* IE 9 */
+  -webkit-transform: rotate(-45deg); /* Safari */
+  transform: rotate(-45deg);
+}
+.downRot {
+  height: auto;
+  width: auto;
+  -ms-transform: rotate(-270deg); /* IE 9 */
+  -webkit-transform: rotate(-270deg); /* Safari */
+  transform: rotate(-270deg);
+}
+.flyin {
+  display: none;
+}
+/*text blur*/
+.blur {/*
+  color: transparent;
+  text-shadow: 0 0 10px rgba(255,255,255,1);
+  opacity: 0;*/
+}
+/*glow effect*/
+.glow {
+  -webkit-transition: text-shadow 0.5s linear;
+  -moz-transition: text-shadow 0.5s linear;
+  -ms-transition: text-shadow 0.5s linear;
+  -o-transition: text-shadow 0.5s linear;
+  transition: text-shadow 0.5s linear;
+}
+.glow.glow{
+    text-shadow: 0 0 15px white;
+}
+.noglow {
+  -webkit-transition: text-shadow 0.5s linear;
+  -moz-transition: text-shadow 0.5s linear;
+  -ms-transition: text-shadow 0.5s linear;
+  -o-transition: text-shadow 0.5s linear;
+  transition: text-shadow 0.5s linear;
+}
+.noglow.glow{
+    text-shadow: none;
+}
+/*TOPICS*/
+#CV {
+  left: 275;
+  top: 8;
+}
+#PROJECTS {
+  left: -26.5;
+  top: 196.5
+}
+#SKILLS {
+  left: 178;
+  bottom: 45;
+}
+#CONTACT {
+  right: -12;
+  bottom: 205;
+}
+#TIMO {
+  right: 184;
+  top: 245;
+}
+/*Fonts*/
+.maven {
+  font-family: 'Maven Pro';
+}
+.pacifico {
+  font-family: 'Pacifico';
+}
+.lobster {
+  font-family: 'Lobster';
+}
+.indieflower {
+  font-family: 'Indie Flower';
+}
+.newscycle {
+  font-family: 'News Cycle';
+}
+.scp {
+  font-family: 'Source Code Pro';
+}
+.tangerine {
+  font-family: 'Tangerine';
+}
+.oswald {
+  font-family: 'Oswald';
+}
+.helvetica {
+  font-family: 'Helvetica Neue';
+}
+
+
+/*content*/
+.container {
+  top: -100vh;
+  width: 100vw;
+  height: 100vh;
+  background: #121212 url(/res/img/background.gif) 0 0;
+  position: absolute;
+}
+.container .content {
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  background-color: rgba(25,25,25,0.6);
+}
+.container div p {
+  font-size: 20px;
+  font-family: 'OpenSans';
+  font-weight: 600;
+  letter-spacing: .02em;
+}

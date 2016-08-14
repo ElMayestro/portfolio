@@ -1,0 +1,141 @@
+.contact-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.contact-container .particles-wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 50vw;
+  background-image: url(/res/img/contact-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.contact-container .contact-bg {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.contact-container .contact-wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50vw;
+  right: 0;
+  background-color: white;
+}
+.contact-container .contact-wrapper .cont-content {
+  position: absolute;
+  top: 100;
+  left: 100;
+  right: 100;
+  bottom: 245;
+}
+.contact-container .contact-wrapper .cont-content .cont-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  border-bottom-color: #011924;
+  border-bottom-style: dashed;
+  border-bottom-width: 0.1em;
+}
+.contact-container .contact-wrapper .cont-content .cont-header p {
+  font-size: 100px;
+  color: black;
+  font-family: 'OpenSans';
+}
+.contact-container .contact-wrapper .cont-content .cont-header p span {
+  color: #011924;
+}
+.contact-container .contact-wrapper .cont-content .cont-body {
+  position: absolute;
+  top: 100;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.cont-content .cont-body input,
+.cont-content .cont-body textarea {
+  background-color: #eaeaea;
+  border: none;
+  outline: none;
+  transition: all .4s ease-out;
+  padding-left: 10px;
+  font-family: 'OpenSans';
+  font-size: 20px;
+  font-weight: lighter;
+}
+.cont-content .cont-body input:focus,
+.cont-content .cont-body textarea:focus {
+  background-image: url(/res/img/background.gif);
+  color: white;
+  border: none !important;
+}
+.cont-content .cont-body input:hover,
+.cont-content .cont-body textarea:hover {
+  border-left-color: #011924;
+  border-left-width: 1px;
+  border-left-style: dashed;
+}
+.contact-container .contact-wrapper .cont-content .cont-body .particulars {
+  height: 40px;
+  width: 100%;
+  margin-top: 30px;
+}
+.particulars #name {
+  float: left;
+  width: 49%;
+  height: 100%;
+}
+.particulars #mail {
+  float: right;
+  width: 49%;
+  height: 100%;
+}
+.cont-body .message {
+  margin-top: 2%;
+  width: 100%;
+  height: 300px;
+}
+.message #message {
+  display: block;
+  width: 100% !important;
+  padding: 10px;
+}
+.cont-body .send {
+  margin-top: 1%;
+  height: 60px;
+  width: 100%;
+  text-align: center;
+}
+.send #sendbtn {
+  height: 60px;
+  width: 100%;
+  background: black;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all .4s ease-out;
+}
+.send #sendbtn:hover {
+  background-color: #011924;
+}
+#sendbtn p {
+  color: white;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+#send {
+  display: none;
+}

@@ -1,0 +1,116 @@
+.swapbar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 87%;
+  background: #121212 url(/res/img/background.gif) 0 0;
+  z-index: 990;
+}
+.menubar {
+  z-index: 1000;
+  position: absolute;
+  top: -30%;
+  left: 3%;
+  right: 3%;
+  bottom: 87%;
+  overflow: hidden;
+  opacity: 1;
+}
+.navigation {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-transform: uppercase;
+  padding: 0;
+  height: 86%;
+}
+/*nav bar media screen*/
+.main-nav {
+  display: block;;
+  position: absolute;
+  margin: 0;
+  right: 0;
+  padding: 0;
+  height: 100%;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+.main-nav a {
+  font-family: 'Oswald';
+  color: #C8C8C8;
+  font-size: 20px;
+  text-decoration: none;
+  letter-spacing: .04em;
+  align-items: center;
+  cursor: auto;
+  font-weight: lighter;
+}
+.main-nav a:hover {
+  color: #FFFFFF;
+}
+.main-nav a.active {
+  font-weight: bolder;
+  color: #FFFFFF;
+  cursor: default;
+}
+.main-nav-item {
+  text-transform: uppercase;
+  padding: 0;
+  display: inline-block;
+  list-style: none;
+  height: 100%;
+}
+.main-nav-item a {
+  position: relative;
+  text-decoration: none;
+  margin: 0;
+  padding: 0 7px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  -webkit-transition: color 0.3s;
+  -moz-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  transition: color 0.3s;
+}
+#logo {
+  display: block;
+  position: absolute;
+  padding: 0;
+  left: 0;
+  top: 50%;
+  margin-top: -17px;
+  width: 34px;
+  height: 34px;
+  background: url(/res/img/logo.png);
+  background-position: center;
+  background-size: cover;
+}
+/*mediascreen*/
+@media only screen and (min-height: 900px) and (min-width: 1200px){
+  .navigation {
+    height: 72%;
+  }
+}
+@media only screen and (min-height: 769px) and (min-width: 1200px){
+  .navigation {
+    height: 76%;
+    font-size: 22px;
+  }
+  .navigation #logo {
+    width: 36px;
+    height: 36px;
+    background-size: 36px 36px;
+    margin-top: -18px;
+  }
+  .navigation .main-nav>.main-nav-item {
+    margin: 0 0 0 22px;
+  }
+}
+@media only screen and (min-height: 769px) and (min-width: 736px){
+  .navigation {
+    height: 76%;
+  }
+}

@@ -1,0 +1,20 @@
+@@font-face {
+  font-family: 'Textex bold';
+  src: url(/res/font/textexgyreadventor-bold.otf);
+}
+/* latin */
+@font-face {
+  font-family: 'OpenSans';
+  font-style: normal;
+  src: url(/res/font/OS-CL.ttf);
+}
+@font-face {
+  font-family: 'OpenSans Italic';
+  font-style: italic;
+  src: url(/res/font/OS-CLI.ttf);
+}
+@font-face {
+  font-family: 'OpenSans Bold';
+  font-style: bold;
+  src: url(/res/font/OS-CB.ttf);
+}
